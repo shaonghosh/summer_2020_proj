@@ -13,7 +13,7 @@ lalapps_inspinj \
 `# Distance distribution: uniform in Euclidean volume.` \
 `# WARNING: distances are in kpc.` \
 --d-distr volume \
---min-distance 40e6 --max-distance 60e6 \
+--min-distance 40e3 --max-distance 60e3 \
 `# Sky position and inclination distribution: isotropic.` \
 --l-distr random --i-distr uniform \
 `# Write a table of CBC injections to inj.xml.` \

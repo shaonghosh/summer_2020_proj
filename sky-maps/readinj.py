@@ -38,9 +38,16 @@ else:
 
 
 df = pd.DataFrame()
+json_dict = {}
 for column in args.cols:
     values = inspiral_table.get_column(column)
     df[column] = values
+    json_dict[column] = values.tolist()
 df.index += 1
 
 print(df)
+jsonfilename = args.inj.split(".")[0] + ".json"
+with open(jsonfilename, 'w') as f:
+    json.dump(json_dict, f, indent=2, sort_keys=True)
+
+

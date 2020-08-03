@@ -46,7 +46,10 @@ for column in args.cols:
 df.index += 1
 
 print(df)
-jsonfilename = args.inj.split(".")[0] + ".json"
+if args.inj:
+    jsonfilename = args.inj.split(".")[0] + ".json"
+elif args.coinc:
+    jsonfilename = args.coinc.split(".")[0] + ".json"
 with open(jsonfilename, 'w') as f:
     json.dump(json_dict, f, indent=2, sort_keys=True)
 

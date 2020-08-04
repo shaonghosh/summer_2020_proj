@@ -2,3 +2,6 @@
 *.fits
 *.xml*
 __pycache__
+build
+dist
+*.egg-info

@@ -1,6 +1,5 @@
 .DS_Store
 *.fits
-*.xml*
 __pycache__
 build
 dist

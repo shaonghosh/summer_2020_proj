@@ -6,9 +6,9 @@ The goal of this project is to develope a technique to use
 gravitational-wave observations from LIGO-Virgo detectors
 of coalescing systems of neutron stars in binaries to 
 generate sky-maps, and then combine them with catalogs of 
-galaxies to get statistical measurement of the Hubble
-constant. This technique is going to complement the existing
-blind-statistical technique using binary black hole coalescence.
+galaxies to get statistical measurement of the Hubble constant
+. This technique is going to complement the existing blind 
+statistical technique using binary black hole coalescence.
 The advantage of this technique is that it reduces the statistical
 trials-factor of a completely blind search by incorporating
 electromagnetic observations from telescopes. The electromagnetic
@@ -21,12 +21,48 @@ the trials factor in the blind search that comes from the large
 number of galaxies in the searched volume. On the other hand
 this method is less powerful than a targeted search (for which
 an electromagnetic counterpart is already found). However, we 
-only have one such candidate, and our compact binary rates estimates
-suggest that such events will be extremely rate. Thus this new method
-sits very nicely between the two techniques of blind search and 
-targeted search, complementing the shortcoming of the both.
+only have one such candidate, and our compact binary rates 
+estimates suggest that such events will be extremely rate. Thus
+this new method sits very nicely between the two techniques of 
+blind search and targeted search, complementing the shortcoming 
+of the both.
 
 
+Hubble Constant:
+----------------
+
+Astronomical observations suggests that almost all galaxies are 
+moving away from us. The more distant the galxies faster is their
+velocity of this receding motion from us. If we assume that we, on
+Earth do not occupy a special position in the universe, then the 
+only explanation of this galaxies moving away from us that the 
+universe is expanding. In an expanding universe all galaxies are 
+moving away from each other. This expansion is is described by
+Hubble's law
+
+v = H0 x D,
+
+where v is the recessional velocity of the galaxies, and D is the 
+proper distance to the respective galaxies. The quantity H0 is 
+called the Hubble constant. The current best-known value of the 
+Hubble constant is about 68 km/s/Mpc
+
+
+
+Methods of measuring the Hubble constant:
+-----------------------------------------
+
+(1) Observation of Supernovae
+
+(2) Cosmic Microwave Background Radiation
+
+(3) Gravitational waves observation:
+    (a) Blind observation of binary black hole coalescences.
+    (b) Targeted measurement of H0 from GW event with confirmed 
+        EM counterparts
+    (c) EM counterpart candidates based statistical search 
+
+The last work is the aim for this project.
 
 
 Basic knowledge: 

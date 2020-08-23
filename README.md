@@ -74,24 +74,30 @@ Make sure you have jupyter installed. From your base environment run
 $ conda install jupyter
 
 Once you have done this, check that you are able to open Jupyter by running
+
 $ jupyter notebook
 
 
 First create a conda environment for this project:
->> conda create -n hubble pip
+
+$ conda create -n hubble pip
 
 Then activate the environment
+
 $ source activate hubble
 
 Make sure that the python in this environment is the one that you want:
+
 $ which python
 
 This will show something like  <some-prefix-here>/hubble/bin/python
 
 Now install the packages necessary for this work:
+
 $ python -m pip install -r sky-maps/requirements.txt
 
 Then setup the installed ipykernel for using Jupyter notebooks:
+
 $ python -m ipykernel install --user --name=hubble
 
 At this point your environment should be ready. Open the jupyter notebook,

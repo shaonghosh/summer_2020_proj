@@ -4,6 +4,8 @@ def parser():
     parser = argparse.ArgumentParser()
     parser.add_argument("-i", "--inj", action="store",
                         help="Name of the injection xml file")
+    parser.add_argument("-o", "--out", action="store",
+                        help="Name of the JSON output file")
     parser.add_argument("-C", "--coinc", action="store",
                         help="Name of the injection xml file")
     parser.add_argument('-c','--cols', nargs='+',
@@ -42,7 +44,7 @@ def main():
     df = pd.DataFrame()
     json_dict = {}
     for column in args.cols:
-        values_obj = inspiral_table.getColumnByName('mass1')
+        values_obj = inspiral_table.getColumnByName(column)
         values = values_obj.asarray()
         df[column] = values
         json_dict[column] = values.tolist()
@@ -53,6 +55,8 @@ def main():
         jsonfilename = args.inj.split(".")[0] + ".json"
     elif args.coinc:
         jsonfilename = args.coinc.split(".")[0] + ".json"
+    if args.out:
+        jsonfilename = args.out
     with open(jsonfilename, 'w') as f:
         json.dump(json_dict, f, indent=2, sort_keys=True)
 

@@ -65,6 +65,47 @@ Methods of measuring the Hubble constant:
 The last work is the aim for this project.
 
 
+
+How to setup the environment:
+-----------------------------
+
+Make sure you have jupyter installed. From your base environment run
+
+$ conda install jupyter
+
+Once you have done this, check that you are able to open Jupyter by running
+$ jupyter notebook
+
+
+First create a conda environment for this project:
+>> conda create -n hubble pip
+
+Then activate the environment
+$ source activate hubble
+
+Make sure that the python in this environment is the one that you want:
+$ which python
+
+This will show something like  <some-prefix-here>/hubble/bin/python
+
+Now install the packages necessary for this work:
+$ python -m pip install -r sky-maps/requirements.txt
+
+Then setup the installed ipykernel for using Jupyter notebooks:
+$ python -m ipykernel install --user --name=hubble
+
+At this point your environment should be ready. Open the jupyter notebook,
+using the command mentioned earlier. Open the notebok named Add_Redshift.ipynb
+bly clicking it. This will open in a different tab on your browser.
+Note that there is a tab called Kernel at the top menu bar. Click on that
+and in the drop-down menu select `change kernel`. This will lead to another
+menu that will pop up in the right. Select the environment you just created,
+namely hubble. You should be able to run Jupyter here now. 
+
+Now go through the notebook, running the cells by hitting shift + enter for each
+one of them. Then read the task at the very bottom and complete it.
+
+
 Basic knowledge: 
 ----------------
 

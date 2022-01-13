@@ -27,7 +27,7 @@ ligo.skymap==0.4.0
 lscsoft-glue==2.0.0
 matplotlib==3.3.1
 networkx==2.5
-numpy==1.19.1
+numpy==1.21.0
 pandas==1.1.1
 parso==0.7.1
 pexpect==4.8.0

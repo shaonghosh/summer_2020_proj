@@ -14,7 +14,7 @@ h5py==2.10.0
 healpy==1.14.0
 idna==2.10
 ipykernel==5.3.4
-ipython==7.31.1
+ipython==8.10.0
 ipython-genutils==0.2.0
 jedi==0.17.2
 jupyter-client==6.1.6
